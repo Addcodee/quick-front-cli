@@ -11,7 +11,7 @@ import { platform } from "os";
 
 const program = new Command();
 
-const TEMPLATE = process.env.GITHUB_REPO;
+const TEMPLATE = process.env.TEMPLATE;
 
 program.name("qk").description("CLI для создания проектов на основе моего шаблона");
 
