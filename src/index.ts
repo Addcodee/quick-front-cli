@@ -18,6 +18,7 @@ const program = new Command();
 const TEMPLATE = process.env.TEMPLATE;
 
 console.log(TEMPLATE);
+console.log(TEMPLATE);
 
 program
 	.name("qk")
