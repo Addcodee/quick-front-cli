@@ -5,10 +5,13 @@ import chalk from "chalk";
 import simpleGit from "simple-git";
 import fs from "fs";
 import path from "path";
+import dotenv from "dotenv";
 import { execSync } from "child_process";
 import inquirer from "inquirer";
 import { platform } from "os";
 import pkg from "../package.json" assert { type: "json" };
+
+dotenv.config();
 
 const program = new Command();
 
