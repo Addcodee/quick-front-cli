@@ -25,9 +25,9 @@ jobs:
             - name: Build project
               run: npm run build
               env:
-                  VITE_APP_BASE_URL: ${{ secrets.TEMPLATE }}
+                  TEMPLATE: ${{ secrets.TEMPLATE }}
 
             - name: Publish to npm
-              env:
-                  NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-              run: npm run publish --access=public
+              uses: JS-DevTools/npm-publish@v1
+              with:
+                  token: ${{ secrets.NPM_TOKEN }}
