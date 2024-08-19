@@ -13,10 +13,7 @@ const program = new Command();
 
 const TEMPLATE = "https://github.com/Addcodee/Quick-Starter.git";
 
-program
-	.name("qk")
-	.description("CLI для создания проектов на основе моего шаблона")
-	.version("1.0.0");
+program.name("qk").description("CLI для создания проектов на основе моего шаблона");
 
 program
 	.command("create <project-name>")
@@ -28,6 +25,8 @@ program
 			console.error(chalk.red("Папка с таким именем уже существует!"));
 			process.exit(1);
 		}
+
+		//some tests
 
 		console.log(chalk.green("Клонирую шаблон..."));
 
