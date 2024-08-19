@@ -26,7 +26,7 @@ program
 			process.exit(1);
 		}
 
-		//some tests
+		//some testsf
 
 		console.log(chalk.green("Клонирую шаблон..."));
 
