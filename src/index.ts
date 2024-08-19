@@ -11,7 +11,7 @@ import { platform } from "os";
 
 const program = new Command();
 
-const TEMPLATE = "https://github.com/Addcodee/Quick-Starter.git";
+const TEMPLATE = process.env.GITHUB_REPO;
 
 program.name("qk").description("CLI для создания проектов на основе моего шаблона");
 
@@ -30,7 +30,7 @@ program
 
 		const git = simpleGit();
 		try {
-			await git.clone(TEMPLATE, projectPath);
+			await git.clone(TEMPLATE as string, projectPath);
 			console.log(chalk.green("Шаблон успешно клонирован."));
 
 			process.chdir(projectPath);
