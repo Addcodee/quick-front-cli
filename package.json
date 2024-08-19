@@ -5,10 +5,10 @@
 	"license": "MIT",
 	"scripts": {
 		"build": "tsc",
-		"patch": "yarn version --patch",
-		"minor": "yarn version --minor",
-		"major": "yarn version --major",
-		"publish": "yarn publish --access public"
+		"patch": "npm version --patch",
+		"minor": "npm version --minor",
+		"major": "npm version --major",
+		"publish": "npm publish --access public"
 	},
 	"dependencies": {
 		"chalk": "^5.3.0",
