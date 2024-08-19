@@ -17,6 +17,8 @@ const program = new Command();
 
 const TEMPLATE = process.env.TEMPLATE;
 
+console.log(TEMPLATE);
+
 program
 	.name("qk")
 	.description("CLI для создания проектов на основе моего шаблона")
