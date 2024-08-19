@@ -26,8 +26,6 @@ program
 			process.exit(1);
 		}
 
-		//some testsfsdf
-
 		console.log(chalk.green("Клонирую шаблон..."));
 
 		const git = simpleGit();
