@@ -8,12 +8,16 @@ import path from "path";
 import { execSync } from "child_process";
 import inquirer from "inquirer";
 import { platform } from "os";
+import pkg from "../package.json" assert { type: "json" };
 
 const program = new Command();
 
 const TEMPLATE = process.env.TEMPLATE;
 
-program.name("qk").description("CLI для создания проектов на основе моего шаблона");
+program
+	.name("qk")
+	.description("CLI для создания проектов на основе моего шаблона")
+	.version(pkg.version);
 
 program
 	.command("create <project-name>")
