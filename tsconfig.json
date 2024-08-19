@@ -1,0 +1,13 @@
+{
+	"compilerOptions": {
+		"target": "es2016",
+		"forceConsistentCasingInFileNames": true,
+		"moduleResolution": "Bundler",
+		"module": "ESNext",
+
+		"strict": true,
+		"skipLibCheck": true,
+		"outDir": "./dist",
+		"rootDir": "./src"
+	}
+}

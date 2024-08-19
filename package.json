@@ -1,0 +1,29 @@
+{
+	"name": "quick-front-cli",
+	"version": "1.0.0",
+	"main": "index.js",
+	"license": "MIT",
+	"scripts": {
+		"build": "tsc",
+		"patch": "yarn version --patch",
+		"minor": "yarn version --minor",
+		"major": "yarn version --major",
+		"publish": "yarn publish --access public"
+	},
+	"dependencies": {
+		"chalk": "^5.3.0",
+		"commander": "^12.1.0",
+		"inquirer": "^10.1.8",
+		"simple-git": "^3.25.0"
+	},
+	"devDependencies": {
+		"@types/commander": "^2.12.2",
+		"@types/inquirer": "^9.0.7",
+		"@types/node": "^22.4.1",
+		"typescript": "^5.5.4"
+	},
+	"type": "module",
+	"bin": {
+		"qk": "./dist/index.js"
+	}
+}
