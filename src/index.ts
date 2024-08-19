@@ -15,7 +15,7 @@ dotenv.config();
 
 const program = new Command();
 
-const TEMPLATE = process.env.TEMPLATE;
+const TEMPLATE = "https://github.com/Addcodee/Quick-Starter.git";
 
 console.log(TEMPLATE);
 
