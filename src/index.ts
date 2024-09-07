@@ -24,7 +24,7 @@ program
 
 program
 	.command("create <project-name>")
-	.description("Создать новый проект")
+	.description("Создать новый проект!")
 	.action(async (projectName: string) => {
 		const projectPath = path.join(process.cwd(), projectName);
 
